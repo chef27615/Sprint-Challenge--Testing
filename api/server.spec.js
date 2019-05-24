@@ -14,9 +14,9 @@ describe('server', () => {
             })
         })
 
-        describe('/game', () => {
+        describe('/games', () => {
             it('should return 200', async () => {
-                const res = await request(server).get('/game');
+                const res = await request(server).get('/games');
                 expect(res.status).toBe(200)
             })
         })

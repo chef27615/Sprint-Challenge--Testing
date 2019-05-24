@@ -10,7 +10,7 @@ server.get('/', async (req, res) => {
     res.status(200).json({ message: "good to go"});
 })
 
-server.get('/game', async (req, res) => {
+server.get('/games', async (req, res) => {
     const game = await gamesList.getAll()
     res.status(200).json(game)
 })
