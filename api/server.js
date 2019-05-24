@@ -1,4 +1,6 @@
 const express = require('express');
+const gamesList = require('../gamesList/gamesModel');
+
 
 const server = express();
 
